@@ -43,7 +43,7 @@ class Event_Calendar_Pro_Geocoding_Key_Provider {
   /**
    * Google Geocoding API key value.
    */
-  private const API_KEY = 'AIzaSyCvnuzakR6qgWL2M4KJnUQ-LFYPJ9R2bcE';
+  private const API_KEY = '<YOUR-GOOGLE-API-KEY-VALUE>';
 
   /**
    * Initializes Google Geocoding API key to be used for server-side geocoding requests.
