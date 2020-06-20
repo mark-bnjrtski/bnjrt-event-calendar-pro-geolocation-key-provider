@@ -28,8 +28,11 @@
  * GNU General Public License for more details. 
  */
 
+/**
+ * Guard.
+ */
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+  exit;
 }
 
 /**
