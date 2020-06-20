@@ -28,15 +28,14 @@
  * GNU General Public License for more details. 
  */
 
-/**
- * Provides a separate Google Geocoding API key for server-side geocoding requests. 
- * This API key should be restricted to IP-address requests. 
- */
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/**
+ * Provides a separate Google Geocoding API key for server-side geocoding requests. 
+ * This API key should be restricted to IP-address requests. 
+ */
 class Event_Calendar_Pro_Geocoding_Key_Provider {
   /**
    * Google Geocoding API key value.
@@ -57,13 +56,13 @@ class Event_Calendar_Pro_Geocoding_Key_Provider {
    *
    * @return Event_Calendar_Pro_Geocoding_Key_Provider
    */
-	private static $instance = null;
-	public static function get_instance() {
-		if (null == self::$instance) {
-			self::$instance = new self;
-		}
-		return self::$instance;
-	}
+  private static $instance = null;
+  public static function get_instance() {
+    if (null == self::$instance) {
+      self::$instance = new self;
+    }
+    return self::$instance;
+  }
 
   /**
    * @param mixed  $response
